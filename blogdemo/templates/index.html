@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django App</title>
+</head>
+<body>
+    {% for article in articles %}
+    <p>{{article.title}}</p>
+    <img src="{{article.image.url}}" alt="{{article.title}}">
+    {% endfor %}
+
+</body>
+</html>
